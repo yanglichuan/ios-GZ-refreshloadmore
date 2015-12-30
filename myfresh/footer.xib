@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i1H-7b-Rnz" customClass="Footerview" customModule="myfresh" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEV-SG-hUy">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <animations/>
+                    <state key="normal" title="点击加载更多"/>
+                    <connections>
+                        <action selector="getmore:" destination="i1H-7b-Rnz" eventType="touchUpInside" id="U41-6J-7O7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HEV-SG-hUy" firstAttribute="leading" secondItem="i1H-7b-Rnz" secondAttribute="leading" id="QKG-Hu-Qhh"/>
+                <constraint firstItem="HEV-SG-hUy" firstAttribute="centerY" secondItem="i1H-7b-Rnz" secondAttribute="centerY" id="oAS-YS-eyq"/>
+                <constraint firstAttribute="trailing" secondItem="HEV-SG-hUy" secondAttribute="trailing" id="xoY-ZB-WLu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="HEV-SG-hUy"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="QKG-Hu-Qhh"/>
+                    <exclude reference="oAS-YS-eyq"/>
+                    <exclude reference="xoY-ZB-WLu"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="HEV-SG-hUy"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="QKG-Hu-Qhh"/>
+                    <include reference="oAS-YS-eyq"/>
+                    <include reference="xoY-ZB-WLu"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="btmore" destination="HEV-SG-hUy" id="s8e-sa-Vxj"/>
+            </connections>
+            <point key="canvasLocation" x="268.5" y="4"/>
+        </view>
+    </objects>
+</document>
